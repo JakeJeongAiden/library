@@ -1,0 +1,117 @@
+:root {
+  font-size: 16px;
+  font-family: "Inter", sans-serif;
+  --text-primary: black;
+  --text-secondary: white;
+  --bg-primary: #23232e;
+  --bg-secondary: #141418;
+  --transition-speed: 1s;
+  --drawer-color: #1c6e8c;
+  /* minimum, ideal, and maximum value */
+  --drawer-width: clamp(210px, 22vw, 325px);
+  --nav-bg-1: #f8f8f8;
+  --nav-color-1: #c9c9c9;
+  --nav-color-2: #62daff6e;
+  --blue-1: #084c61;
+  --gh-avatar: url("https:github.com/jakejeongaiden.png");
+  --content-gray: rgb(235, 235, 235);
+  --transition-notDrawer: margin-left 0.4s ease-in;
+  --transition-drawer: width 0.4s ease-in;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  grid-template-areas:
+    "drawer nav nav nav"
+    "drawer content content content";
+  grid-template-rows: 0.6fr 4fr;
+  grid-template-columns: 50rem 1fr 1fr 1fr;
+}
+
+.drawer {
+  width: 5rem;
+  background-color: var(--drawer-color);
+  position: fixed;
+  transition: var(--transition-drawer);
+  overflow: hidden;
+  height: 100vh;
+}
+.drawer:hover {
+  width: var(--drawer-width);
+}
+
+.menuItem > h1 {
+  display: none;
+  margin-left: 2rem;
+}
+
+.drawer > div:not(:first-child) > * {
+  padding: 1vw 0.1vw 0.1vw 0vw;
+  font-size: calc(20px + 0.2vw);
+  padding-left: 20px;
+}
+.drawer > div:not(:first-child) > img {
+  width: calc(20px + 0.5vw);
+}
+
+/* Separate setting */
+.drawer > div:nth-child(8) {
+  padding-top: 60px;
+}
+
+.dashboard {
+  font-size: clamp(12px, calc(25px + 0.9vw), 50px);
+}
+.dashboard img {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: calc(40px + 0.7vw);
+  height: calc(40px + 0.7vw);
+  padding-left: 10px;
+  padding-top: 10px;
+}
+
+.drawer:hover > .menuItem > h1 {
+  display: inline;
+}
+
+/* This allows hover to work by adding margin to the left */
+.drawer:hover ~ .navbar,
+.drawer:hover ~ .content {
+  margin-left: calc(var(--drawer-width) -5rem);
+}
+
+.menuItem {
+  color: var(--text-secondary);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+}
+.menuItem > * {
+  cursor: pointer;
+}
+
+.navbar {
+  grid-area: nav;
+  background-color: #333;
+}
+
+.content {
+  grid-area: content;
+  background-color: var(--bg-primary);
+}
+
+.project {
+}
+
+.books {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  padding-left: 20px;
+}

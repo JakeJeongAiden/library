@@ -1,0 +1,15 @@
+{
+  "name": "library",
+  "version": "1.0.0",
+  "description": "",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "compile": "sass  main.scss style.css --watch --no-source-map"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "sass": "^1.70.0"
+  }
+}

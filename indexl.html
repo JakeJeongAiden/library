@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="reset.css">
+  <link rel="stylesheet" href="style.css">
+  <title>Book Collection</title>
+</head>
+<body>
+
+  <!-- App Drawer -->
+  <div class="drawer">
+    <div class="dashboard menuItem" >
+      <img src="public/bookshelf.svg" alt="bookshelf icon">
+      <h1 class='h1-library'>Library</h1>
+    </div>
+    <div class="menuItem" >
+      <img src="public/home-variant.svg" alt="home icon">
+      <h1>Home</h1>
+    </div>
+    <a class="menuItem" href='/library/library.html'>
+      <img src="public/book-open-blank-variant-outline.svg" alt="dashboard">
+      <h1>Library</h1>
+    </a>
+    <div class="menuItem" >
+      <img src="public/android-messages.svg" alt="dashboard">
+      <h1>Messages</h1>
+    </div>
+    <div class="menuItem" >
+      <img src="public/clock-outline.svg" alt="dashboard">
+      <h1>History</h1>
+    </div>
+    <div class="menuItem" >
+      <img src="public/note-multiple.svg" alt="dashboard">
+      <h1>Tasks</h1>
+    </div>
+    <div class="menuItem" >
+      <img src="public/account-group.svg" alt="dashboard">
+      <h1>Community</h1>
+    </div>
+    <!-- Need Spacing Here, nth child -->
+    <div class="menuItem" >
+      <img class='icons' src="public/cog.svg" alt="dashboard">
+      <h1>Setting</h1>
+    </div>
+    <div class="menuItem" >
+      <img class='icons' src="public/message-question.svg" alt="dashboard">
+      <h1>Support</h1>
+    </div>
+    <div class="menuItem" >
+      <img class='icons' src="public/shield-check.svg" alt="dashboard">
+      <h1>Privacy</h1>
+    </div>
+  </div>
+
+
+  <!-- Navbar -->
+  <div class='navbar'>
+
+
+
+
+
+
+    <!-- Top Section -->
+    <div class="topnav">
+      <!-- Search icon & Search Bar -->
+      <div class="search">
+        <div class="menuItem">
+          <img src="public/magnify.svg" alt="">
+        </div>
+        <input type="text" name='search' autocomplete='off'>
+      </div>
+      <div class="account">
+        <!-- Bell Icon -->
+        <div class="menuicon">
+          <img src="public/bell-outline.svg" alt="Bell Icon">
+        </div>
+        <!-- Avatar from GitHub -->
+        <div class="profileicon">
+          <img class='icons'  src='https://github.com/JakeJeongAiden.png'/>
+        </div>
+        <p class="name">Aiden Jeong</p>
+      </div>
+    </div>
+    
+
+
+
+
+
+
+
+    <!-- Bottom Section -->
+    <div class="bottom">
+
+      <!-- Profile details -->
+      <div class="profile">
+        <div class="profileicon">
+          <img class='icons'  src='https://github.com/JakeJeongAiden.png'/>
+        </div>
+        <div class="profile-name">
+          <p class="greeting">Hi there,</p>
+          <p class="name">Aiden Jeong 
+            <span class="username">(@AidenJeong)</span></p>
+        </div>
+      </div>
+
+      <!-- Button Sections -->
+      <div class="buttons">
+        <button class='btn js-addbook'>Add Book</button>
+        <button class='btn'>Upload</button>
+        <button class='btn'>Share</button>
+      </div>
+
+    </div>
+  </div>
+
+
+  <!-- Main Content -->
+  <main class='content'>
+    <div class="projects">
+      <h3>Upcoming Books</h3>
+      <!-- Section for all project cards -->
+      <div class="cards js-cards">
+        <div class="card">
+          <h5 class="card-title">Harry Potter</h5>
+          <p class="card-text">
+            Throughout the series, Harry Potter is described as a gifted wizard apprentice. He has a particular talent for flying, which manifests itself in Harry Potter and the Philosopher's Stone the first time he tries it, and gets him a place on a Quidditch team one year before the normal minimum joining age.
+          </p>
+          <div class="icons">
+            <img src='public/heart-outline.svg' alt=''/>
+            <img src='public/eye-check-outline.svg' alt=''/>
+            <img src='public/trash-can-outline.svg' alt=''/>
+          </div>
+        </div>
+        <div class="card">
+          <h5 class="card-title">Twlight</h5>
+          <p class="card-text">
+            The Twilight Saga is a series of romance fantasy films based on the book series Twilight by Stephenie Meyer. The series has grossed over $5.28 billion worldwide. The first installment, Twilight, was released on November 21, 2008.
+          </p>
+          <div class="icons">
+            <img src='public/heart-outline.svg' alt=''/>
+            <img src='public/eye-check-outline.svg' alt=''/>
+            <img src='public/source-branch.svg' alt=''/>
+          </div>
+      
+        </div>
+
+      </div>
+
+   
+    </div>
+      <!-- Side Content Announcements & Trending -->
+      <div class="announcements">
+        <h3>Announcements</h3>
+        <ul class="card">
+          <li class="announcement">
+            <h5 class="card-title">Site Maintenance</h5>
+            <p class="card-text">
+              Library app feature coming soon.
+            </p>
+          </li>
+          <li class="announcement">
+            <h5 class="card-title">Community Share Day</h5>
+            <p class="card-text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit quidem, maiores quibusdam facilis doloremque quos tenetur debitis dolorem autem eveniet commodi neque et aut sunt voluptate facere libero praesentium ipsum.
+            </p>
+          </li>
+          <li class="announcement">
+            <h5 class="card-title">Updated Privacy Policy</h5>
+            <p class="card-text">
+              This Privacy Statement may be updated periodically and without prior notice to you to reflect changes in our information practices or relevant laws. We will post a notice on this website and other webistes that point to this Privacy Statement to notify you or any substantive changes to the way we collect and use information.
+            </p>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Trending -->
+      <div class="trending">
+        <h3>Trending</h3>
+        <ul class="card">
+          <li class="trend trend-1">
+            <div class="gh-avatar2"></div>
+            <div class="account">
+              <p class="username">@tegan</p>
+              <p class="name card-text">World Peace Builder</p>
+            </div>    
+          </li>
+        </ul>
+        <ul class="card">
+          <li class="trend trend-2">
+            <div class="gh-avatar"></div>
+            <div class="account">
+              <p class="username">@Aiden</p>
+              <p class="name card-text">World Peace Builder</p>
+            </div>    
+          </li>
+        </ul>
+        <ul class="card">
+          <li class="trend trend-3">
+            <div class="gh-avatar3"></div>
+            <div class="account">
+              <p class="username">@tegan</p>
+              <p class="name card-text">World Peace Builder</p>
+            </div>    
+          </li>
+        </ul>
+        <ul class="card">
+          <li class="trend trend-4">
+            <div class="gh-avatar4"></div>
+            <div class="account">
+              <p class="username">@tegan</p>
+              <p class="name card-text">World Peace Builder</p>
+            </div>    
+          </li>
+        </ul>
+      </div>
+    
+  </main>
+
+<div class='popup-form js-popup-form'>
+  <button class='close-button js-close-button'>Close</button>
+  <h3>Add Book</h3>
+  <form action="submit" class='form' method='post'>
+    <label for="title">Title</label>
+    <input type="text" name='title' id='title' required>
+    <label for="author">Author</label>
+    <input type="text" name='author' id='author' required>
+    <label for="pages">Pages</label>
+    <input type="text" name='pages' id='pages' required>
+    <label for="description">Description</label>
+    <textarea name="description" id="description" cols="30" rows="5" required ></textarea>
+    <label for="read">Read</label>
+    <input type='checkbox' name='read' id='read'>
+    <button class='js-submit 'type='submit' class='btn'>Add</button>
+  </form>
+  
+
+</div>
+
+  <script src='script.js'>
+
+    
+  </script>
+</body>
+
+</html>
