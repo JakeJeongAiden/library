@@ -148,7 +148,7 @@ function fillOutEditForm(book) {
 //create the edit icon w/ event listener
 function createEditIcon(book) {
   const editIcon = document.createElement("img");
-  editIcon.src = "../public/pencil-outline.svg";
+  editIcon.src = "public/pencil-outline.svg";
   editIcon.setAttribute("class", "edit-icon");
   editIcon.addEventListener("click", () => {
     fillOutEditForm(book);
