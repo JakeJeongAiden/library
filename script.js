@@ -122,11 +122,11 @@ function createIcons() {
   const div = createBookElement("div", null, "icons");
 
   const icon1 = document.createElement("img");
-  icon1.src = "../public/heart-outline.svg";
+  icon1.src = "public/heart-outline.svg";
   const icon2 = document.createElement("img");
-  icon2.src = "../public/eye-check-outline.svg";
+  icon2.src = "public/eye-check-outline.svg";
   const icon3 = document.createElement("img");
-  icon3.src = "../public/source-branch.svg";
+  icon3.src = "public/source-branch.svg";
 
   div.appendChild(icon1);
   div.appendChild(icon2);
